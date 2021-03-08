@@ -12,7 +12,7 @@ body {
     font-family: 'Oswald', sans-serif;
     color: black;
     font-weight: 300;
-
+    height: 100%;
 }
 
 header {
@@ -82,7 +82,7 @@ h2 .container {
 
 h2 {
     text-align: center;
-    font-size: 1em bold;
+    font-size: 1.5em;
 }
 
 h3 {
@@ -103,6 +103,27 @@ footer {
     padding: 1px;
     width: 100%;
     margin: 0;
+    height: 400px;
+}
+
+footer ul {
+        display: flex;
+        float: right;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        padding: 0 20px;
+        height: 100px;
+        background-color:rgba(250, 246, 246, 0.74);
+}
+
+.top {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.full {
+    display: none;
 }
 
 footer h2 {
@@ -115,6 +136,13 @@ footer p {
     margin: 10px;
 }
 
+footer div {
+    float: left;
+    display: inline;
+    padding: 20px;
+    margin: 10px;
+}
+
 
 @font-face {
     src: url('Oswald-VariableFont_wght.ttf') format('ttf');
@@ -122,7 +150,7 @@ footer p {
 
 /*media queries*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     * {
         box-sizing: border-box;
     }
@@ -216,6 +244,16 @@ footer p {
         margin-bottom: 0;
     }
     
+    .top {
+        display: none;
+      }
+      
+    .full {
+        display: inline-block;
+        margin-left: 20px;
+        width: 30%;
+      }
+
     footer p {
         margin: 0 auto;
     }
@@ -279,7 +317,7 @@ footer p {
     }
 
     .container {
-        min-width: 1024;
+        min-width: 1024px;
     }
 
     .col {
@@ -306,6 +344,15 @@ footer p {
     footer h2 {
         margin: 10px
     }
+
+    .top {
+        display: none;
+      }
+      
+    .full {
+        display: inline-block;
+        margin-left: 5px;
+      }
     
 
 
